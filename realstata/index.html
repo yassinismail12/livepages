@@ -5,21 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RealStata</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; color: #333; }
-    h1 { color: #004080; }
-    a { display: block; margin: 10px 0; color: #004080; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { margin-top: 40px; font-size: 14px; color: #666; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fb;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    main {
+      max-width: 700px;
+      background: white;
+      margin-top: 40px;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      margin: 30px 0;
+    }
+
+    .links a {
+      display: inline-block;
+      background: #004080;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin: 5px;
+      transition: background 0.2s ease;
+    }
+
+    .links a:hover {
+      background: #0066cc;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
-  <h1>RealStata</h1>
-  <p>Welcome to RealStata’s official site.  
-     Here you can access our legal documents required for our chatbot service.</p>
+  <header>
+    <h1>RealStata</h1>
+  </header>
 
-  <h2>Legal Pages</h2>
-  <a href="./privacy.html">Privacy Policy</a>
-  <a href="./terms.html">Terms of Service</a>
+  <main>
+    <p>Welcome to RealStata’s official site.  
+       Here you can access our legal documents required for our chatbot service.</p>
+
+    <div class="links">
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+    </div>
+  </main>
 
   <footer>
     <p>&copy; 2025 RealStata. All Rights Reserved.</p>
